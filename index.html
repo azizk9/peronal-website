@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abdulaziz Kenjo | Official website</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+
+  <body class="black-bg white-text">
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" />
+          <ul id="sidemenu" class="text-capitalize">
+            <li>
+              <a href="#header">home</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+
+            <li>
+              <a href="#portofilo">portofilo</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
+            </li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <span>Hi, I'm</span>
+          <span class="pink-text">Abdulaziz</span>
+          <span>kanjo</span>
+          <br />
+          <span>Software. Eng.</span>
+        </div>
+      </div>
+    </div>
+    <canvas id="snowCanvas"></canvas>
+    <div
+      class="container"
+      style="padding-top: 30px; z-index: 2; position: relative"
+    >
+      <div class="paper">
+        <div id="about" style="padding-top: 30px">
+          <div class="container flex">
+            <div class="hero-img flexbox-item">
+              <img src="images/1.png" />
+            </div>
+
+            <div class="about-me flexbox-item">
+              <h1 class="sub-title">About Me</h1>
+              <div class="tab-titles text-capitalize">
+                <p class="tab-links active-link" onclick="opentab('skils')">
+                  skils
+                </p>
+                <p class="tab-links" onclick="opentab('experince')">
+                  experince
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skils">
+                <ul>
+                  <li>
+                    <span>UI/UX</span>
+                    <br />designing web/App interfaces
+                  </li>
+                  <li>
+                    <span>web designing</span>
+                    <br />designing web interfaces
+                  </li>
+                  <li>
+                    <span>web development</span>
+                    <br />web development
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experince">
+                <ul>
+                  <li>
+                    <span>UI/UX</span>
+                    <br />designing web/App interfaces
+                  </li>
+                  <li>
+                    <span>web designing</span>
+                    <br />designing web interfaces
+                  </li>
+                  <li>
+                    <span>web development</span>
+                    <br />web development
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li>
+                    <span>unversity</span>
+                    <br />istanbul iyden unversity
+                  </li>
+                  <li>
+                    <span>gradut year</span>
+                    <br />still studying
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" style="z-index: 2; position: relative">
+      <div class="container">
+        <h1 class="sub-title">services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>
+              I will do UI UX design of mobile apps and UI UX design of websites
+            </p>
+            <a href="">lern more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>A Full Stack Developer</h2>
+            <p>
+              I will develop a responsive HTML CSS bootstrap website in front
+              end, php my squl for backend
+            </p>
+            <a href="slide/">lern more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>mobile app Developer</h2>
+            <p>bulid mobile application from zero</p>
+            <a href="slide2/">lern more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>IT</h2>
+            <p>
+              I will do UI UX design of mobile apps and UI UX design of websites
+            </p>
+            <a href="">lern more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" style="z-index: 2; position: relative">
+      <div class="container">
+        <div class="contact_section">
+          <div class="contact-left">
+            <h1 class="sub-title">contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              <a href="mailto:abdulazizkanjoagha@gmail.com"
+                >abdulazizkanjoagha@gmail.com</a
+              >
+            </p>
+            <p>
+              <a href="https://wa.link/v4i5rm">
+                <i class="fa-solid fa-square-phone"> 00905305462988 </i>
+              </a>
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/azizk9">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abdul-aziz-kanjo-agha-6662b7250/"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <a href="" class="btn btn2">DOWNLOAD CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="'submit-to-google-sheet" class="contactForm">
+              <input type="text" name="name" placeholder="your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+        <p class="end"><span>copyright by</span> abdul aziz kanjo</p>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/aa6f8de930.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <script src="./global.js"></script>
+    <script>
+      var canvas = document.getElementById("snowCanvas");
+      var context = canvas.getContext("2d");
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      class Snowflake {
+        constructor(x, y, size, velocity) {
+          this.x = x;
+          this.y = y;
+          this.size = size;
+          this.velocity = velocity;
+        }
+
+        draw(context) {
+          context.beginPath();
+          context.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+          context.fillStyle = "white";
+          context.fill();
+        }
+
+        move() {
+          this.y += this.velocity;
+        }
+      }
+
+      var snowflakes = [];
+
+      function generateSnowflake() {
+        var x = Math.floor(Math.random() * canvas.width);
+        var y = 0;
+        var size = Math.random() + 1;
+        var velocity = Math.random() + 0.5;
+        snowflakes.push(new Snowflake(x, y, size, velocity));
+      }
+
+      setInterval(generateSnowflake, 100);
+
+      function update() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        for (var i = 0; i < snowflakes.length; i++) {
+          snowflakes[i].move();
+          snowflakes[i].draw(context);
+        }
+      }
+
+      function animate() {
+        update();
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
