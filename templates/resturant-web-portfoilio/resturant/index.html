@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="/utils/global.css">
+  <link rel="stylesheet" type="text/css" href="/utils/convform/jquery.convform.css">
+  <title>Mom's Kitchen | resturant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="./favicon.png">
+</head>
+
+<body>
+
+
+
+ <!-- ChatBot -->
+  <div class="chat_icon">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+  </div>
+
+  <div class="chat_box">
+    <div class="my-conv-form-wrapper">
+      <form action="" method="GET" class="hidden">
+
+        <select data-conv-question="Hello! How can I help you" name="category">
+          <option value="WebDevelopment">Website Development ? </option>
+          <option value="DigitalMarketing">Digital Marketing ?</option>
+        </select>
+
+        <div data-conv-fork="category">
+          <div data-conv-case="WebDevelopment">
+            <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">
+          </div>
+          <div data-conv-case="DigitalMarketing" data-conv-fork="first-question2">
+            <input type="text" name="companyName" data-conv-question="Please, enter your company name">
+          </div>
+        </div>
+
+        <input type="text" name="name" data-conv-question="Please, Enter your name">
+
+        <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+        <input data-conv-question="Enter your e-mail"
+          data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+          type="email" name="email" required placeholder="What's your e-mail?">
+
+        <select data-conv-question="Please Conform">
+          <option value="Yes">Conform</option>
+        </select>
+
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="nav-placeholder"></div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="./media/resturant1.jpg" alt="resturant1">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="./media/resturant2.jpg" alt="resturant2">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="item">
+            <img src="./media/resturant3.jpg" alt="resturant3">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <center>
+      <div class="marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-circle" src="./media/chef12.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>pizza</h2>
+            <p>We offer the most delicious types of pizza with the experience of the best chefs coming directly from
+              Italy.</p>
+            <p><a class="btn btn-default" href="/pizza/" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="./media/chef13.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>spagity</h2>
+            <p>We offer the most delicious baked goods of all kinds, Asian, Arabic, Persian, Turkish, European, and
+              American with the best chefs around the world.</p>
+            <p><a class="btn btn-default" href="/sbagity" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="./media/chef145.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Arabic cuisine</h2>
+            <p>we offer the most delicuse arabic cuisin with profisinal chef.</p>
+            <p><a class="btn btn-default" href="/arabic cuisine/" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </center>
+
+
+
+
+
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span>
+        </h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+          semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+          commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="./media/asian.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 col-md-push-5">
+        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+          semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+          commodo.</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+        <img class="featurette-image img-responsive center" src="./media/italyan.jpg" alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+          semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+          commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-responsive center-block" src="./media/arabic.jpg"
+          alt="Generic placeholder image">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+
+   <div class="col-xs-12">
+      <div class="container">
+        <center>
+          <ul class="pagination">
+            <li><a href="/">1</a></li>
+            <li><a href="/resturant/">2</a></li>
+            <li><a href="/coffe/">3</a></li>
+            <li><a href="/kids-area/">4</a></li>
+            <li><a href="/call-us/">5 </a></li>
+            <li><a href="/about-us/">6</a></li>
+            <li><a href="/recervision/">7</a></li>
+          </ul>
+        </center>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ <div class="footer-placeholder"></div>
+
+  <!--  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+  </script>
+  <script src="/utils/global.js"></script>
+  <script type="text/javascript" src="/utils/convform/jquery.convform.js"></script>
+  <script type="text/javascript" src="./main.js"></script>
+
+</body>
+
+</html>
