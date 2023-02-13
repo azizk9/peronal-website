@@ -119,9 +119,6 @@ const Footer = () => `<div class="footer">
             </div>
           </div>`;
 
-
-
-
 function main() {
   const body = document.querySelector("body");
   const navPlaceHolder = document.querySelector("body .nav-placeholder");
