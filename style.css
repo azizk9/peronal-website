@@ -17,8 +17,6 @@ body {
   z-index: 1;
 }
 
-
-
 /*--------------- Logo ---------------*/
 
 .logo {
@@ -378,9 +376,6 @@ nav .fa-solid {
   display: block;
   margin-top: -40px;
 }
-
-
-
 
 .contact_section {
   display: grid;
