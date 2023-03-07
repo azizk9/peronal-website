@@ -21,20 +21,36 @@ function closemenu() {
   // sidemeu.style.display = "none";
 }
 
-const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxFPOumeDbJiqgWAk-0amckNNlNJFnw_qsVxtUCz0NdFsgIjAVks72krB6x-Q1HiuTTzw/exec";
 const form = document.querySelector(".contactForm");
-const msg = document.getElementById("msg");
+const msgEl = document.getElementById("msg");
 
-form.addEventListener("submit", (e) => {
+async function handleSubmit(e) {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxFPOumeDbJiqgWAk-0amckNNlNJFnw_qsVxtUCz0NdFsgIjAVks72krB6x-Q1HiuTTzw/exec";
+
+  const name = document.getElementById("name");
+  const email = document.getElementById("email");
+  const message = document.getElementById("message");
+
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      msg.innerHTML = "message sent successfully";
-      setTimeout(function () {
-        msg.innerHTML = "";
-      }, 5000);
-      form.reset();
-    })
-    .catch((error) => console.error("Error!", error.message));
-});
+
+  try {
+    await fetch(scriptURL, {
+      method: "POST",
+      body: {
+        name,
+        email,
+        message,
+      },
+    });
+
+    msgEl.innerHTML = "Message sent successfully!";
+    setTimeout(() => (msg.innerHTML = ""), 5000);
+    form.reset();
+  } catch (error) {
+    console.error("Error!", error.message);
+    msgEl.innerHTML = "Failed to send the message!";
+  }
+}
+
+form.addEventListener("submit", handleSubmit);
