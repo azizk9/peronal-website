@@ -168,6 +168,7 @@ body > div.nav > button {
   background-size: cover;
   z-index: -1;
   position: relative;
+  background-position: center;
 }
 
 .back .overlay {
@@ -605,6 +606,10 @@ body > div.nav > button {
 
 .contact .form {
   width: 70%;
+}
+
+.contactForm * {
+  color: black;
 }
 
 .contact .form .first-row,
